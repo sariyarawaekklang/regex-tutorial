@@ -1,10 +1,17 @@
-# Title (replace with your title)
+# Regex Tutorial - Matching an IP Address
 
-Introductory paragraph (replace this with your text)
+Welcome to Regex Tutorial!
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regular expressions, more commonly known as regex, are an pattern of characters that describe a certain amount of text. They can be used to obtain information from any text by searching for one or more matches of a specific search pattern. Fun fact: Regex can be used in almost all programming languages!
+</br>
+</br>
+This Regex Tutorial will explain the component of regex in relation to matching an IP address, like shown in the following snippet:
+
+```
+^(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\.(?!$)|$)){4}$
+```
 
 ## Table of Contents
 
@@ -24,9 +31,15 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+Anchors are used to indicate the position of the numbers in the IP address. `^` is for the start of a string or line, as `$` is for the end of a string or line.
+
 ### Quantifiers
 
+Quantifiers indicate how many times a character, group, or character class must be present in the input for a match to be found. The quantifier shown in this IP matching regex is `?`, which means that the preceding matches zero or one time.
+
 ### OR Operator
+
+OR operators are `|` and `[]`. `|` determines if a sequence matches a string and contains components of a previous string. `[]` deteremines that a sequence indeeds match a string, but does not contain components of a previous string.
 
 ### Character Classes
 
@@ -46,4 +59,4 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Please feel free to reach out via [my GitHub](https://github.com/sariyarawaekklang) with any questions. Thank you for using my Regex Tutorial!
